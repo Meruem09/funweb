@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(rgb(1, 0, 18),rgb(0, 0, 0));
+}
+
+.box{
+    height: 200px;
+    width: 350px;
+    top: -100px;
+    left: 600px;
+    display: flex;
+    margin-top: -370px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box .eye{
+    
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: aqua;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(207, 244, 255, 0.2), 
+                    inset 0 0 10px #4629d5,
+                    inset 0 0 15px #00e1ff;
+}
+.box .eye::before{
+    content: "";
+    position:absolute;
+    top: 50%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000000;
+    border: 10px solid rgb(32, 45, 160);
+    box-sizing: border-box;
+}
+audio{
+    background: transparent;
+    border: 1px solid;
+    width: 0px;
+    height: 0px;
+}
+/*
+l-quantum{
+    position:relative;
+    margin-top: 150px;
+}
+*/
+
+.container {
+    position: relative;
+    margin-top: 300px; /* Adjust this margin to ensure content starts below the fixed box */
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -140px;
+    right: auto;
+
+    
+}
+
+.content {
+    width: 900px;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    background-color:transparent;
+    color: #00e1ff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.content h1{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 90px;
+}
+
+.content h2{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.feature1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f1description p{
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+
+.content video{
+    height: 200px;
+    width: 300px;
+}
